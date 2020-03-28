@@ -1,0 +1,21 @@
+/* pages/input/input.wxss */
+.input{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.icon {
+  display: inline-block;
+  border: 10rpx solid transparent;
+  border-top: 10rpx solid #666;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+button{
+   margin-top: 15px;
+   width: 100%;
+   background-color: rgb(31, 153, 246);
+   color: white;
+}

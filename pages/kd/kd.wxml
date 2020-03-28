@@ -1,0 +1,23 @@
+<!--pages/kd/kd.wxml-->
+<view>
+  <view style='text-align:center;font-size:35px;color:rgb(31, 153, 246);margin-top:30%'>快递查询</view>
+
+
+
+  <view style='margin-top:15px;'>
+    选择对应的快递公司:
+    <form bindsubmit='formSubmit'>
+      <view class='input'>
+        <picker range='{{kuaidi}}' value='{{index}}' bindchange='kuaidiChange' name='kuaidi' style='border:1px;'>
+          <view>{{kuaidi[index]}}<view class="icon"></view></view>
+          
+        </picker>
+        <input type='text' style='border:1px solid #ccc;border-radius:5px;height:30px;margin-left:10px;' name='kd'></input>
+      </view>
+      <button style='background-color:bule;' form-type='submit' bindtap='kdcx'>查询</button>
+    </form>
+  </view>
+
+
+
+</view>

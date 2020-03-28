@@ -1,0 +1,4 @@
+<!--pages/shopDetail/shopDetail.wxml-->
+<image src='{{shopdetail.image}}' style='width:120px;height:120px'></image>
+<view>名称：{{shopdetail.text}}</view>
+<view>价格：{{shopdetail.jiage}}元</view>

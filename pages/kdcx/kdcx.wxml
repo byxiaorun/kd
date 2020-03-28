@@ -1,0 +1,2 @@
+<!--pages/kdcx/kdcx.wxml-->
+<web-view src='{{cx}}'></web-view>

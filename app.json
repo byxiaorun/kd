@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/kd/kd",
+    "pages/kdcx/kdcx",
+    "pages/shop/shop",
+    "pages/shopDetail/shopDetail",
+    "pages/me/me",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "实用Api聚合",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/kd/kd",
+        "text": "快递查询"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "购物"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

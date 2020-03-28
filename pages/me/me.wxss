@@ -1,0 +1,85 @@
+/* pages/me/me.wxss */
+
+.loginTitle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #fff;
+}
+
+.select {
+  font-size: 18px;
+  color: blue;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  width: 50%;
+  text-align: center;
+  border-bottom: 3px solid blue;
+}
+
+.default {
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.hr {
+  height: 40px;
+  width: 100%;
+  background-color: #707070;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.text {
+  width: 80px;
+  text-align: left;
+}
+
+/* 微信快捷登陆样式 */
+
+.amountBg {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  background-color: #5495e6;
+  align-items: center;
+}
+
+.img {
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.account {
+  width: 70%;
+  color: #fff;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.nick-name {
+  font-family: 'Mcrosoft Yahei';
+  font-size: 16px;
+}
+
+.address {
+  font-size: 13px;
+}
+
+.nav {
+  width: 15px;
+  color: #fff;
+}

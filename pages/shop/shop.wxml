@@ -1,0 +1,67 @@
+<!-- 广告位滚动图 -->
+<view class='ad'>
+  <swiper indicator-dots='true' autoplay='true' duration='1000' interval='3000' style='height:74px;width:{{winWidth}};'>
+    <block wx:for="{{adImages}}">
+      <swiper-item>
+        <image src='{{item}}' style='height:74px;'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--  广告位滚动图结束 -->
+
+<!-- 下拉筛选框 -->
+<view class="page">
+  <view class="nav">
+    <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listdq" data-nav="1">
+      <view class="content">{{dqname}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son {{shownavindex == 3? 'active' : ''}}" bindtap="listpx" data-nav="3">
+      <view class="content">排序</view>
+      <view class="icon"></view>
+    </view>
+  </view>
+  <!--地区筛选 -->
+  <view class="quyu {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+    <view class="qy quyu-left">
+      <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{city1}}" bindtap="selectleft" data-city='{{index}}'>{{index}}</view>
+    </view>
+    <view class="qy quyu-center">
+      <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{city2}}" bindtap="selectcenter" data-city='{{index}}'>{{index}}</view>
+    </view>
+    <view class="qy quyu-right">
+      <view wx:for="{{city3}}" class="{{select3 == index?'current3':''}}" bindtap='selectright' data-city="{{index}}">
+        <label>{{item}}</label>
+        <image src='/images/selectRight.png' style="{{select3 == index?'display:block':'display:none'}}"></image>
+      </view>
+    </view>
+    <view class='form-btn'>
+      <button class='btn-reset' bindtap='quyuEmpty'>重置</button>
+      <button class='btn-submit' bindtap='submitFilter'>确定</button>
+    </view>
+  </view>
+  <!-- 地区筛选结束 -->
+  <!-- 排序筛选 -->
+  <view class="temp temp2 contentCenter {{pxopen ? 'slidown' : 'slidup'}} {{pxshow ? 'disappear':''}}">
+    <view wx:for="{{content}}" bindtap='selectPX' data-index="{{index}}" class="pxTable {{pxIndex == index?'current4':''}}">
+      {{item}}
+    </view>
+  </view>
+  <view class="{{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+  <!-- 排序筛选结束 -->
+</view>
+<!-- 下拉筛选框结束 -->
+<view class='neirong'>
+  <view style='position:relative;top: 30%;'>
+    <view style='text-align:center'>欢迎进入“{{dqname}}”购物专区</view>
+    <block wx:for="{{shop}}" class='shop'>
+      <view bindtap='shopDetail' id='{{item.id}}'>
+        <image src='{{item.image}}' style='width:120px;height:120px'></image>
+        <view>名称：{{item.text}}</view>
+        <view>价格：{{item.jiage}}元</view>
+      </view>
+    </block>
+
+  </view>
+</view>
